@@ -1,0 +1,74 @@
+
+.parent-3{
+    background-color: rgb(13, 46, 13);
+}
+
+.parent-3 .calc-container{
+    width: 50%;
+    margin: auto;
+}
+
+.parent-3 .calc-container form{
+    padding: 50px;
+    background-image: url(/kidcalc/assets/images/image-theme3-1.jpg);
+    border-bottom: 2px solid whitesmoke;
+}
+
+.parent-3 button{
+    background-color: cornsilk;
+}
+
+.parent-3 label{
+    color: rgb(21, 243, 147);
+}
+
+.parent-3 fieldset{
+    padding: 20px;
+    background-image: url(/kidcalc/assets/images/image-theme3-2.jpg);
+    background-size: contain;
+}
+
+.parent-3 .calculator{
+    padding-top: 90px;
+}
+
+.parent-3 .equation{
+    width: 100%;
+
+}
+
+.parent-3 h3{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.parent-3 .buttons-calc{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,auto) ;
+}
+
+.parent-3 .info-bar{
+    padding-top: 20px;
+}
+
+.parent-3 .info-bar input {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 6px solid whitesmoke;
+}
+.parent-3 h3{
+    color: azure;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+@media(max-width:480px){
+    .parent-3 .login-form form{
+        width: 90%;
+        margin: auto;
+    }
+}

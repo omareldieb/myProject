@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidcalc1</title>
+    <link rel="stylesheet" href="/kidcalc/assets/style.css">
+</head>
+<body class="parent-3">
+    <div class="calc-container">
+        <div class="login-form">
+            <form action="">
+                <fieldset>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+                    <br>
+                    <label for="age">Age: </label>
+                    <input type="text" id="age" name="age" required />
+                    <br>
+                    <label for="">select your theme: </label>
+                    <br>
+                    <select name="selectTheme" id="selectTheme" title="theme" onchange="changeTheme()">
+                        <option value="parent-1">space</option>
+                        <option value="parent-2">cars</option>
+                        <option value="parent-3">dinasours</option>
+                    </select>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="calculator">
+            <h3>The kidcalc</h3>
+            <fieldset>
+                <label for="text">equation:</label>
+                <input type="text" id="text" class="equation" value="25 + 23" required>
+                <br>
+                <label for="number">Your answer:</label>
+                <input type="number" id="number" class="equation">
+                <button type="submit">Sumbit</button>
+                <br>
+                <div class="buttons-calc">
+                    <button class="zero">0</button>
+                    <button class="one">1</button>
+                    <button class="two">2</button>
+                    <button class="three">3</button>
+                    <button class="four">4</button>
+                    <button class="five">5</button>
+                    <button class="six">6</button>
+                    <button class="seven">7</button>
+                    <button class="eight">8</button>
+                    <button class="nine">9</button>
+                    <button class="plus">+</button>
+                    <button class="minus">-</button>
+                    <button class="multiply">*</button>
+                    <button class="divide">/</button>
+                    <button class="modelous">%</button>
+                    <button class="clear">c</button>
+                    <button class="more than">></button>
+                    <button class="less than"><</button>
+                    <button class="more than or equal">>=</button>
+                    <button class="less than or equal"><=</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="info-bar">
+            <label for="text"></label>
+            <input type="text" id="text" value="Hello user . your score is 2 now" >
+        </div>
+    </div>
+    <script>
+        function changeTheme(){
+            let body = document.body
+            let themevalue = document.getElementById("selectTheme").value
+            body.className = themevalue
+        }
+    </script>
+</body>
+</html>
